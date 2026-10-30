@@ -21,6 +21,7 @@ test('envoie un e-mail de confirmation et retourne le montant', async () => {
     );
 });
 
+
 test("refuse un panier vide et n'envoie aucun e-mail", async () => {
     await expect(
         validerCommande([], 'client@test.fr')
